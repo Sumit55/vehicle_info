@@ -1,0 +1,5 @@
+name: Vehicle info
+type: module
+description: Display vehicle information.
+core_version_requirement: ^9 || ^10
+package: Custom

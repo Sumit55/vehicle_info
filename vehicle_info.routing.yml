@@ -1,0 +1,7 @@
+vehicle_info.settings:
+  path: '/vehicle-form'
+  defaults:
+    _form: '\Drupal\vehicle_info\Form\VehicleInfoForm'
+    _title: 'Vehicle form'
+  requirements:
+    _permission: 'access content'

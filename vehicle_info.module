@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains vehicle_info.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function vehicle_info_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.vehicle_info':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Vehicle information') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+// /**
+//  * Implements hook_theme().
+//  */
+// function location_time_display_theme($existing, $type, $theme, $path) {
+//   return [
+//     'location_time_display' => [
+//       'variables' => [
+//         'country' => NULL,
+//         'city' => NULL,
+//         'locationtime' => NULL,
+//       ],
+//     ],
+//   ];
+// }
